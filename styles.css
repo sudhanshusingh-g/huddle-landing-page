@@ -14,39 +14,39 @@
 }
 body{
     background-image: url(./images/bg-mobile.svg);
-    background-position: center;
-    transform: rotateX();
-    background-size:cover;
+    background-position: top;
+    background-size: contain;
     background-repeat: no-repeat;
     background-color: var(--violet);
     font-family: var(--body);
 }
 .logo{
-    padding: 1.5rem 0;
-    margin-bottom: 1.2rem;
+    padding:0.8rem 1.2rem;
 }
 .logo img{
-    margin-left: 2rem;
-    width: 30%;
-}
-
-.image-section{
-    text-align: center;
-    margin-bottom: 1.5rem;
-}
+    width: 35%;
+    }
+    .container{
+        padding: 1.2rem
+        }
+    .image-section {
+        text-align: center;
+        padding: 1.2rem;
+    }
 .image-section img{
-    max-width: 500px;
-    width: 80%;
-}
-.content-section{
-    text-align: center;
-    margin-bottom: 1.5rem;
+    max-width: 80%;
     
+}
+.content-section {
+    text-align: center;
+    margin: 2.5rem 0;
+    /* padding: 0.2rem; */
 }
 .content-section h1{
     font-size: 1.5rem;
     font-family: var(--heading);
     color: white;
+    
 }
 .content-section p{
     color: rgba(245, 242, 242, 0.856);
@@ -68,9 +68,13 @@ button:hover{
     background-color: var(--magenta);
     color: white;
 }
-.social-icons{
-    text-align: center;
-    padding: 1.5rem;
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
 }
 .fa-brands{
     padding: 0.5rem;
@@ -87,14 +91,45 @@ button:hover{
 
 
 
-@media screen and(max-width:780px) {
-    /* body{
-        color: var(--magenta);
-    }
-    .landing-page{
+@media screen and (min-width: 780px) {
+    body{
         background-image: url(./images/bg-desktop.svg);
-        flex-direction: row;
-    }     */
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    .logo img{
+        width: 12%;
+        }
+    .image-section{
+        width: 50%;
+    }
+    .image-section img{
+        width: 100%;
+    }
+    .content-section{
+        text-align: left;
+        width: 50%;
+    }
+    .content-section h1{
+        font-size: 2rem;
+        margin-bottom: 1.2rem;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.2rem;
+    }
+    .image-section img{
+        max-width: 100%;
+        
+    }
+    .social-icons{
+        justify-content: flex-end;
+    }
+    
 }
 /* Mobile: 375px
 Desktop:1440px */
