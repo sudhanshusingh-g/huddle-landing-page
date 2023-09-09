@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root{
+    --violet:hsl(257, 40%, 49%);
+    --magenta:hsl(300, 69%, 71%);
+    --body: 'Open Sans', sans-serif;
+    --heading: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./images/bg-mobile.svg);
+    background-position: center;
+    transform: rotateX();
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-color: var(--violet);
+    font-family: var(--body);
+}
+.logo{
+    padding: 1.5rem 0;
+    margin-bottom: 1.2rem;
+}
+.logo img{
+    margin-left: 2rem;
+    width: 30%;
+}
+
+.image-section{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.image-section img{
+    max-width: 500px;
+    width: 80%;
+}
+.content-section{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    
+}
+.content-section h1{
+    font-size: 1.5rem;
+    font-family: var(--heading);
+    color: white;
+}
+.content-section p{
+    color: rgba(245, 242, 242, 0.856);
+    line-height: 1.5;
+    letter-spacing: 0.8px;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+}
+button{
+    padding: 0.8rem 4rem;
+    border-style: none;
+    border-radius: 1.5rem;
+    color: var(--violet);
+    font-weight: 600;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.527);
+    cursor: pointer;
+}
+button:hover{
+    background-color: var(--magenta);
+    color: white;
+}
+.social-icons{
+    text-align: center;
+    padding: 1.5rem;
+}
+.fa-brands{
+    padding: 0.5rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+}
+.fa-brands:hover{
+    background-color: var(--magenta);
+    color: white;
+}
+
+
+
+
+@media screen and(max-width:780px) {
+    /* body{
+        color: var(--magenta);
+    }
+    .landing-page{
+        background-image: url(./images/bg-desktop.svg);
+        flex-direction: row;
+    }     */
+}
+/* Mobile: 375px
+Desktop:1440px */
